@@ -1,0 +1,34 @@
+name: 'My Send Email Action'
+description: 'Send an email using SMTP'
+inputs:
+  server_address:
+    description: 'SMTP server address'
+    required: true
+  server_port:
+    description: 'SMTP server port'
+    required: true
+  username:
+    description: 'Email account username'
+    required: true
+  password:
+    description: 'Email account password'
+    required: true
+  subject:
+    description: 'Email subject'
+    required: true
+  body:
+    description: 'Email body'
+    required: true
+  to:
+    description: 'Recipient email address'
+    required: true
+  from:
+    description: 'Sender email address'
+    required: true
+  html:
+    description: 'Whether the email body is HTML'
+    required: false
+    default: 'false'
+runs:
+  using: 'node16'
+  main: 'index.js'
