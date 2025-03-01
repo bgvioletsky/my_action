@@ -1,5 +1,6 @@
 name: Test My Send Email Action
 on:
+  push:
   workflow_dispatch:
 
 jobs:
@@ -11,10 +12,10 @@ jobs:
         with:
           server_address: smtp.163.com
           server_port: 465
-          username: bglhcode@163.com
-          password: XUYPGYSEDDCABUMA 
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: Test Email
           body: This is a test email sent from my custom GitHub Action.
-          to: bglhcode@qq.com
-          from: bglhcode@163.com
+          to: ${{ secrets.AIM_EMAIL }}
+          from: ${{ secrets.EMAIL_USERNAME }}
           html: false
