@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send email
-        uses: bgvioletsky/send_email@main  # 替换为你的仓库信息
+        uses: bgvioletsky/send_email@1.0.1  # 替换为你的仓库信息
         with:
           server_address: smtp.163.com
           server_port: 465
