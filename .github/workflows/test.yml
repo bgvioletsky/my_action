@@ -1,5 +1,6 @@
 name: Test My Send Email Action
-on: push
+on:
+  workflow_dispatch:
 
 jobs:
   test-action:
