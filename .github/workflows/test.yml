@@ -6,14 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send email
-        uses: your-github-username/my-action-send-mail@main  # 替换为你的仓库信息
+        uses: bgvioletsky/my_action@main  # 替换为你的仓库信息
         with:
-          server_address: smtp.example.com
+          server_address: smtp.163.com
           server_port: 465
-          username: your-email@example.com
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          username: bglhcode@163.com
+          password: XUYPGYSEDDCABUMA 
           subject: Test Email
           body: This is a test email sent from my custom GitHub Action.
-          to: recipient@example.com
-          from: your-email@example.com
+          to: bglhcode@icloud.com
+          from: bglhcode@163.com
           html: false
